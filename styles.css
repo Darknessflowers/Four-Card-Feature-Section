@@ -4,84 +4,119 @@
   --orange-color: hsl(34, 97%, 64%);
   --blue-color: hsl(212, 86%, 64%);
 }
+
 body {
   background: #fafafa;
   background: hsl(0, 0%, 98%);
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+
 h1 {
-    font-weight: 200;
-    color: hsl(234, 12%, 34%);
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
 }
+
 h1 span {
-    font-weight: 600;
+  font-weight: 600;
 }
+
 h2 {
   color: hsl(234, 12%, 34%);
   margin-top: 0;
 }
-p {
-    color: hsl(229, 6%, 66%);
-    font-weight: 400;
-    font-size: 15px;
-    font-size: 0.9375rem;
+.intro p {
+    margin: 0;
 }
+p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: #3e52a3;
   color: hsl(228, 45%, 44%);
 }
+
 .intro {
   max-width: 1108px;
   margin: 0 auto;
   text-align: center;
-  padding: 90px 0 70px 0;
+  padding: 3% 0 2.5% 0;
 }
+
 .container {
   display: flex;
-  max-width: 1108px;
+  max-width: 1140px;
   margin: 0 auto;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .col {
   flex-basis: 31%;
 }
+
 .box {
-    border-top: 3px solid;
-    background: #fff;
-    box-shadow: 0px 6px 19px 0px rgba(76, 78, 97, 0.45);
-    padding: 30px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin: 0px 0 40px 0;
+  border-top: 4px solid;
+  background: #fff;
+  box-shadow: 0px 7px 13px -2px rgba(163, 165, 174, 0.59);
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0px 0 40px 0;
 }
 
 .cyan {
   border-color: var(--cyan-color);
   align-self: center;
 }
+
 .red {
   border-color: var(--red-color);
 }
+
 .yellow {
   border-color: var(--orange-color);
-
 }
+
 .blue {
   border-color: var(--blue-color);
   align-self: center;
 }
 
+.icon {
+  display: block;
+  margin: 40px 0 0 auto;
+}
+@media only screen and (max-width: 1160px) {
+  .container {
+    max-width: 95%;
+  }
+}
 @media only screen and (max-width: 800px) {
   .col {
-    flex:1 1 auto;
+    flex: 1 1 auto;
   }
-  .container {
+
+  .container, .intro {
     max-width: 90%;
+  }
+  h1 {
+    font-size: 26px;
+    font-size: 1.625rem;
+  }
+  .intro {
+    padding: 13% 0 12.5% 0;
+  }
+  .intro p {
+    display: inline;
   }
 }
