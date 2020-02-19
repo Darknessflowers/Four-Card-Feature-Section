@@ -7,6 +7,25 @@
 body {
   background: #fafafa;
   background: hsl(0, 0%, 98%);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+h1 span {
+    font-weight: 600;
+}
+h2 {
+  color: hsl(234, 12%, 34%);
+  margin-top: 0;
+}
+p {
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+    font-size: 15px;
+    font-size: 0.9375rem;
 }
 .attribution {
   font-size: 11px;
@@ -16,18 +35,30 @@ body {
   color: #3e52a3;
   color: hsl(228, 45%, 44%);
 }
+.intro {
+  max-width: 1108px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 90px 0 70px 0;
+}
 .container {
   display: flex;
   max-width: 1108px;
   margin: 0 auto;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .col {
-  flex-basis: 30%;
+  flex-basis: 31%;
 }
 .box {
-  border-top: 3px solid;
-  background: #fff;
+    border-top: 3px solid;
+    background: #fff;
+    box-shadow: 0px 6px 19px 0px rgba(76, 78, 97, 0.45);
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0px 0 40px 0;
 }
 
 .cyan {
@@ -44,4 +75,13 @@ body {
 .blue {
   border-color: var(--blue-color);
   align-self: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .col {
+    flex:1 1 auto;
+  }
+  .container {
+    max-width: 90%;
+  }
 }
